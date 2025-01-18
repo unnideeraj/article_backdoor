@@ -72,7 +72,7 @@ The potential risks are underscored by past incidents:
 
 ### Adoption by Indian Organizations
 
-Critical Indian agencies, including the Central Bureau of Investigation (CBI), Intelligence Bureau (IB), and Research and Analysis Wing (RAW), utilize computing systems powered by Intel and AMD processors.
+Critical Indian agencies, including the Central Bureau of Investigation (CBI), Intelligence Bureau (IB), Defence Research and Development Organisation (DRDO), and Research and Analysis Wing (RAW), utilize computing systems powered by Intel and AMD processors.
 
 ### Surveillance Risks
 
@@ -80,7 +80,7 @@ The integration of ME and PSP in these systems poses significant risks:
 
 - **Foreign Espionage:** Given the potential for these subsystems to be exploited, there is a concern that foreign intelligence agencies could leverage these technologies for surveillance, compromising national security.
 
-- **Supply Chain Vulnerabilities:** Reliance on foreign-manufactured hardware introduces risks of pre-embedded backdoors or vulnerabilities that could be exploited by adversaries.
+- **Supply Chain Vulnerabilities:** Reliance on foreign-manufactured hardware introduces risks of pre-embedded backdoors or vulnerabilities that could be exploited by adversaries.just like the brilliant [Pager Blast](https://ieeexplore.ieee.org/document/10759611).
 
 ### Strategic Concerns
 
