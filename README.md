@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In modern computing, hardware-based security mechanisms are integral to system integrity and remote management. Among these, Intel's Management Engine (ME) and AMD's Platform Security Processor (PSP) are prominent. While designed to enhance security and manageability, these subsystems have sparked debates due to their opaque operations and potential vulnerabilities. This article dives into the functionalities of Intel ME and AMD PSP, examines their potential exploitation as backdoors, and discusses the implications for national security, particularly concerning India's critical organizations.
+In modern computing, hardware-based security mechanisms are integral to system integrity and remote management. Among these, [Intel's Management Engine (ME)](https://www.intel.com/content/www/us/en/support/articles/000008927/software/chipset-software.html) and [AMD's Platform Security Processor (PSP)](https://en.wikipedia.org/wiki/AMD_Platform_Security_Processor) are prominent. While designed to enhance security and manageability, these subsystems have sparked debates due to their opaque operations and potential vulnerabilities. This article dives into the functionalities of Intel ME and AMD PSP, examines their potential exploitation as backdoors, and discusses the implications for national security, particularly concerning India's critical organizations.
 
 ## Understanding Intel Management Engine (ME)
 
@@ -16,7 +16,7 @@ Intel Management Engine (ME) is a dedicated microcontroller integrated into Inte
 
 - **Direct Hardware Access:** ME has direct access to system hardware, including memory, storage, and network interfaces, enabling efficient management and troubleshooting.
 
-- **Cryptographic Operations:** It handles cryptographic functions, such as secure boot processes and Digital Rights Management (DRM) enforcement, ensuring that only authorized firmware and software are executed.
+- **Cryptographic Operations:** It handles cryptographic functions, such as [secure boot](https://learn.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-secure-boot) processes and Digital Rights Management [(DRM)](https://www.fortinet.com/resources/cyberglossary/digital-rights-management-drm) enforcement, ensuring that only authorized firmware and software are executed.
 
 ### Security Concerns
 
@@ -26,7 +26,7 @@ Despite its intended benefits, Intel ME has been scrutinized for several reasons
 
 - **Closed Architecture:** The proprietary nature of ME means its source code is undisclosed, limiting independent security assessments and fostering apprehension about undiscovered vulnerabilities.
 
-- **Documented Vulnerabilities:** Notably, in 2017, a critical vulnerability (CVE-2017-5689) was discovered, allowing unauthorized network attackers to execute arbitrary code with administrative privileges, underscoring the risks associated with such embedded subsystems.
+- **Documented Vulnerabilities:** Notably, in 2017, a critical vulnerability [CVE-2017-5689](https://nvd.nist.gov/vuln/detail/cve-2017-5689) was discovered, allowing unauthorized network attackers to execute arbitrary code with administrative privileges, underscoring the risks associated with such embedded subsystems.
 
 ## Unpacking AMD Platform Security Processor (PSP)
 
@@ -46,7 +46,7 @@ While designed to enhance security, PSP has faced criticism:
 
 - **Opaque Functionality:** Similar to Intel ME, PSP operates as a "black box," with limited public information about its internal workings, leading to concerns about potential undisclosed vulnerabilities.
 
-- **Reported Vulnerabilities:** In 2021, a flaw in the PSP driver was identified, potentially allowing attackers to extract sensitive data, such as encryption keys, from system memory, highlighting the risks associated with such embedded components.
+- **Reported Vulnerabilities:** In 2021, a flaw in the PSP driver was identified, potentially allowing attackers to extract sensitive data, such as encryption keys, from system memory, highlighting the risks associated with such embedded components.[Refer](https://hackaday.com/2021/10/01/flaw-in-amd-platform-security-processor-affects-millions-of-computers/)
 
 ## Technical Analysis of Backdoor Potential
 
@@ -64,9 +64,9 @@ The deep integration of Intel ME and AMD PSP into system architectures presents 
 
 The potential risks are underscored by past incidents:
 
-- **Stuxnet:** This sophisticated malware targeted specific hardware controllers, demonstrating the feasibility and impact of hardware-level exploits.
+- **[Stuxnet:](https://en.wikipedia.org/wiki/Stuxnet)** This sophisticated malware targeted specific hardware controllers, demonstrating the feasibility and impact of hardware-level exploits.
 
-- **Pegasus Spyware:** Developed by Israel's NSO Group, Pegasus exploited vulnerabilities to gain deep access to target devices, illustrating the real-world implications of such backdoors.
+- **[Pegasus Spyware:](https://en.wikipedia.org/wiki/Pegasus_(spyware))** Developed by Israel's NSO Group, Pegasus exploited vulnerabilities to gain deep access to target devices, illustrating the real-world implications of such backdoors.
 
 ## Implications for National Security in India
 
@@ -90,4 +90,11 @@ The dependence on proprietary, foreign hardware underscores the need for:
 
 - **Policy Initiatives:** Implementing policies that mandate security audits and certifications for hardware used in critical sectors to mitigate risks.
 
+### Discussions
+ - [Supermicro](https://www.supermicro.com/en/support/security_Intel_ME_SPS_TXE)
+ - [Security_Stackexchange](https://security.stackexchange.com/questions/128619/what-are-the-privacy-and-security-risks-associated-with-intels-management-engin)
+ - https://www.csoonline.com/article/562761/researchers-say-now-you-too-can-disable-intel-me-backdoor-thanks-to-the-nsa.html
+ - https://www.youtube.com/watch?v=HNwWQ9zGT-8
+ - https://forums.macrumors.com/threads/a-semi-comprehensive-guide-to-the-intel-management-engine-and-circumvention-thereof-amd-psp-notes.2268387/
+ - https://news.ycombinator.com/item?id=19536092 
  
